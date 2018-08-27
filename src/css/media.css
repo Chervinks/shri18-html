@@ -1,0 +1,62 @@
+@media (max-width: 1024px) {
+    .grid {
+        display: block;
+    }
+    .header {
+        border-bottom: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .tabs, .double_arrow, .aside__arrows, .favorites__arrows, .favorites__Button {
+        display: none;
+    }
+
+    .info {
+        width: 100%;
+        display: block;
+    }
+
+    .main {
+        padding-right: 40px;
+    }
+
+    .main_devices {
+        margin-left: 25px;
+    }
+
+    .device {
+        float: left;
+    }
+
+    .aside {
+        display: block;
+        padding-right: 0;
+        padding-left: 40px;
+    }
+
+    .aside__devices {
+        flex-direction: row;
+        overflow:scroll;
+        height: 130px;
+        width: initial;
+    }
+
+    .aside__devices_slider {
+        flex-wrap: nowrap;
+    }
+
+    .favorites__devices {
+        overflow:scroll;
+    }
+
+    .favorites__Button_media {
+        display: block;
+    }
+
+    .favorites {
+        padding-left: 40px;
+    }
+}
