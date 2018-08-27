@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Яндекс Дом</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/handler.js"></script>
+</head>
+<body>
+<div class="grid">
+
+    <!-- ============================================ Header ============================================ -->
+    <header class="header">
+        <a class="logo" href="#"></a>
+        <nav class="navigation">
+            <div class="menu"></div>
+            <ul class="tabs">
+                <li>
+                    <a href="#" class="active">Сводка</a>
+                </li>
+                <li>
+                    <a href="#">Устройства</a>
+                </li>
+                <li>
+                    <a href="#">Сценарии</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================ Main block ============================================ -->
+    <main class="main">
+        <h2 class="section_name">Главное</h2>
+        <div class="info">
+            <div class="info_general">
+                <h1>Привет, Геннадий</h1>
+                <p>Двери и окна закрыты, сигнализация включена.</p>
+                <div class="temperature">
+                    <div class="temperature_inside">
+                        <h3>Дома</h3>
+                        <span class="degrees">+23</span>
+                    </div>
+                    <div class="temperature_outside">
+                        <h3>За окном</h3>
+                        <span class="degrees">+19</span>
+                        <img src="assets/cloud-drizzle.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main_devices">
+                <a href="#popupTemperature">
+                    <div class="device">
+                        <img src="assets/icon_temperature@1x.png" alt="">
+                        <div>
+                            <h3>Philips Cooler</h3>
+                            <p>Начнет охлаждать в 16:30</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#popupLight">
+                    <div class="device">
+                        <img src="assets/icon_sun@1x.png" alt="">
+                        <div>
+                            <h3>Xiaomi Yeelight LED Smart Bulb</h3>
+                            <p>Включится в 17:00</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="double_arrow">
+                    <img src="assets/Icons/Arrow Double/M.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- =========================================== Favorites scenarios =========================================== -->
+    <aside class="aside">
+        <div class="section_name">
+            <h2>Избранные сценарии</h2>
+            <div class="aside__arrows">
+                <button class="aside__arrowButton aside__arrowButton_nohover" disabled="disabled"></button>
+                <button class="aside__arrowButton aside__arrowButton_right aside__arrowButton_nohover"
+                        disabled="disabled"></button>
+            </div>
+        </div>
+        <div class="aside__devices">
+            <div class="aside__devices_slider">
+                <div class="device">
+                    <img src="assets/icon_sun_2@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Выключить весь свет в доме и во дворе</h3>
+                    </div>
+                </div>
+                <div class="device">
+                    <img src="assets/icon_scheduled@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Я ухожу</h3>
+                    </div>
+                </div>
+                <div class="device">
+                    <img src="assets/icon_sun_2@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Включить свет в коридоре</h3>
+                    </div>
+                </div>
+                <div class="device">
+                    <img src="assets/icon_temperature_2@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Набрать горячую ванну</h3>
+                        <p>Начнетсы в 18:00</p>
+                    </div>
+                </div>
+                <div class="device">
+                    <img src="assets/icon_temperature_2@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Сделать пол тёплым во всей квартире</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- =========================================== Favorites devices =========================================== -->
+    <section class="favorites">
+        <div class="favorites__header">
+            <div class="favorites__navigation">
+                <h2>Избранные Устройства</h2>
+                <button class="favorites__Button favorites__Button_media favorites__Button_active" type="button">
+                    Все
+                    <img src="assets/Icons/arrow-down.svg" alt="">
+                </button>
+                <button class="favorites__Button favorites__Button_active" type="button">Все</button>
+                <button class="favorites__Button" type="button">Кухня</button>
+                <button class="favorites__Button" type="button">Зал</button>
+                <button class="favorites__Button" type="button">Лампочки</button>
+                <button class="favorites__Button" type="button">Камеры</button>
+            </div>
+            <div class="favorites__arrows">
+                <button class="favorites__arrowButton favorites__arrowButton_nohover favorites_arrow_left"></button>
+                <button class="favorites__arrowButton favorites__arrowButton_right favorites_arrow_right"></button>
+            </div>
+        </div>
+        <div class="favorites__devices">
+            <div class="favorites__devices_slider">
+                <a href="#popupTemperature">
+                <div class="device" >
+                    <img src="assets/icon_temperature_2@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Xiaomi Warm Floor</h3>
+                        <p>Включено</p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#popupLight">
+                <div class="device favorite_device" >
+                    <img src="assets/icon_sun_2@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Xiaomi Yeelight LED Smart Bulb</h3>
+                        <p>Включено</p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#popupFloorTemperature">
+                <div class="device favorite_device">
+                    <img src="assets/icon_sun@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>D-Link Omma 180 Cam</h3>
+                        <p>Включится в 17:00</p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#popupTemperature">
+                <div class="device favorite_device">
+                    <img src="assets/icon_temperature@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Elgato Eve Degree Connected</h3>
+                        <p>Выключено до 17:00</p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#popupFloorTemperature">
+                <div class="device favorite_device">
+                    <img src="assets/icon_sun@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>LIFX Mini Day &amp; Dusk A60 E27</h3>
+                        <p>Включится в 17:00</p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#popupTemperature">
+                <div class="device favorite_device">
+                    <img src="assets/icon_sun_2@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Xiaomi Mi Air Purifier 2S</h3>
+                        <p>Включено</p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#popupFloorTemperature">
+                <div class="device favorite_device">
+                    <img src="assets/icon_sun@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Philips Zhirui</h3>
+                        <p>Выключено</p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#popupTemperature">
+                <div class="device favorite_device">
+                    <img src="assets/icon_sun@1x.png" alt="">
+                    <div class="devices__block_flex">
+                        <h3>Xiaomi Yeelight LED Smart Bulb</h3>
+                        <p>Выключено</p>
+                    </div>
+                </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- =========================================== Footer =========================================== -->
+    <footer class="footer">
+        <div class="footers__navigation">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <a href="#">Обратная связь</a>
+                    </li>
+                    <li>
+                        <a href="#">Разработчикам</a>
+                    </li>
+                    <li>
+                        <a href="#">Условия использования</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2001-2017 ООО &laquo;Яндекс&raquo;</p>
+    </footer>
+</div>
+</div>
+
+<div id="popupFloorTemperature" class="overlay">
+    <div class="popups__table">
+        <div class="popups__cell">
+            <div class="popups__modal">
+                <div class="popups__main">
+                    <div class="popups__header">
+                        <div class="popups__left">
+                            <h1>Xiaomi Warm Floor</h1>
+                            <p>Включено</p>
+                        </div>
+                        <div class="popups__right">
+                            <span class="span__temperature">+23</span>
+                            <img src="assets/icon_temperature_2@2x.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popups__content popups__content_floor">
+                        <div class="popups__contentCircle"></div>
+                        <div class="popups__contentCircleStartBlack"></div>
+                        <div class="popups__contentCircleStartWhite"></div>
+                        <div class="popups__contentCircleShadow">
+                            <span>+23</span>
+                        </div>
+                        <div class="popups__contentCircleArrow">
+                            <img src="assets/Icons/icon_arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a class="close" href="#" type="button">
+                    <button class="popups__button popups__button_accept" type="button">Применить
+                    </button>
+                </a>
+                <a class="close" href="#" type="button">
+                    <button class="popups__button" type="button">Закрыть</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popupLight" class="overlay">
+    <div class="popups__table">
+        <div class="popups__cell">
+            <div class="popups__modal">
+                <div class="popups__main">
+                    <div class="popups__header">
+                        <div class="popups__left">
+                            <h1>Xiaomi Yeelight LED Smart Bulb</h1>
+                            <p>Включится в 17:00</p>
+                        </div>
+                        <div class="popups__right">
+                            <img src="assets/icon_sun@2x.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popups__content">
+                        <div class="popups__contentButton_flex">
+                            <button class="popups__contentButton popups__contentButton_active" type="button">Вручную
+                            </button>
+                            <button class="popups__contentButton" type="button">Дневной свет</button>
+                            <button class="popups__contentButton" type="button">Вечерний свет</button>
+                            <button class="popups__contentButton" type="button">Рассвет</button>
+                        </div>
+                        <div class="popups__contentSlider contentSlider__light">
+                            <img class="popups__contentImg" src="assets/icon_sun_min.png" alt="">
+                            <div class="popups__contentBorder"></div>
+                            <img class="popups__contentImg" src="assets/icon_sun_max.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a class="close" href="#" type="button">
+                    <button class="popups__button popups__button_accept" type="button">Применить
+                    </button>
+                </a>
+                <a class="close" href="#" type="button">
+                    <button class="popups__button" type="button">Закрыть</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popupTemperature" class="overlay">
+    <div class="popups__table">
+        <div class="popups__cell">
+            <div class="popups__modal">
+                <div class="popups__main">
+
+                    <div class="popups__header">
+                        <div class="popups__left">
+                            <h1>Elgato Eve Degree Connected</h1>
+                            <p>Включено</p>
+                        </div>
+                        <div class="popups__right">
+                            <span class="span__temperature">+23</span>
+                            <img src="assets/icon_temperature_2@2x.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="popups__content">
+                        <div class="popups__contentButton_flex">
+                            <button class="popups__contentButton popups__contentButton_active" type="button">Вручную
+                            </button>
+                            <button class="popups__contentButton" type="button">Холодно</button>
+                            <button class="popups__contentButton" type="button">Тепло</button>
+                            <button class="popups__contentButton" type="button">Жарко</button>
+                        </div>
+                        <div class="popups__contentSlider contentSlider__temperature">
+                            <div class="popups__contentText">-10</div>
+                            <div class="popups__contentBorder"></div>
+                            <div class="popups__contentText">+30</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="close" href="#" type="button">
+                    <button class="popups__button popups__button_accept" type="button">Применить
+                    </button>
+                </a>
+                <a class="close" href="#" type="button">
+                    <button class="popups__button" type="button">Закрыть</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
